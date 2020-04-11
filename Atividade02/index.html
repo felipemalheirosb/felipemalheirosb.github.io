@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+          <div class="jumbotron">
+            <h1 class="display-4 ">COVID-19</h1>
+            <p class="lead">Acompanhe os principais números referentes ao covid-19 nos estados brasileiros.</p>
+            <hr class="my-4">
+            <p >Para mais informações confira as principais assuntos comentados sobre o coronavírus no twitter.</p>
+            
+            <a class="btn btn-primary btn-lg " href="https://www.unicef.org/brazil/" role="button">DOE</a>
+          </div>
+
+        <div class="row">
+          <div class="col">
+            <h4 id="title">Dados do Covid-19 Brasil 2020</h4>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">UF</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Casos</th>
+                        <th scope="col">Mortes</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="state_table">
+
+                </tbody>
+            </table>
+          </div>
+        
+          <div class="col">
+                <h4 id="title">#Dicas</h4>
+    
+                <div class="card bg-primary text-white text-center p-3 mb-3">
+                    <blockquote class="blockquote mb-0">
+                      <p>Lave as mãos com água e sabão ou use álcool em gel.</p>
+                      <footer class="blockquote-footer text-white">
+                        <small>
+                          Recomendado pela OMS.
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  
+                  <div class="card bg-secondary text-white text-center p-3 mb-3">
+                    <blockquote class="blockquote mb-0">
+                      <p>Cubra o nariz e boca ao espirrar ou tossir.</p>
+                      <footer class="blockquote-footer text-white">
+                        <small>
+                          Recomendado pela OMS.
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                
+                  <div class="card bg-success text-white text-center p-3 mb-3">
+                    <blockquote class="blockquote mb-0">
+                      <p>Evite aglomerações se estiver doente.</p>
+                      <footer class="blockquote-footer text-white">
+                        <small>
+                          Recomendado pela OMS.
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+    
+                  <div class="card bg-danger text-white text-center p-3 mb-3">
+                    <blockquote class="blockquote mb-0">
+                      <p>Mantenha os ambientes bem ventilados.</p>
+                      <footer class="blockquote-footer text-white">
+                        <small>
+                          Recomendado pela OMS.
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+    
+                  <div class="card bg-warning text-white text-center p-3 mb-3">
+                    <blockquote class="blockquote mb-0">
+                      <p>Não compartilhe objetos pessoais.</p>
+                      <footer class="blockquote-footer text-white">
+                        <small>
+                          Recomendado pela OMS.
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+          </div>
+
+          <div class="col">
+                <h4 id="title">#OMSBrasil</h4>
+                <a class="twitter-timeline" href="https://twitter.com/OPASOMSBrasil?ref_src=twsrc%5Etfw">Tweets by OPASOMSBrasil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+         
+            $(".alert").click(function(){
+                $("#titulo").fadeOut(1000);
+            });
+
+
+        });
+
+
+    </script>
+
+</body>
+
+<footer>
+    <section class="bg-dark p-4">
+        <p class="text-white text-center">CoronaBrasil - Felipe Malheiros Barros - UNIFACISA - 2020</p>
+    </section>
+</footer>
+</html>
